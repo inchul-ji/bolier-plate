@@ -10,8 +10,18 @@ model : Schema를 감싸주는 역할
 schema : 객체의 상태를 정의하는 것을 의미한다.
 
 
+nodemon 다운로드
+ - 소스코드 변경 시 수동 재시작없이 자동으로 재시작하여 소스코드 반영을 적용한다.
+    npm install nodemon --save-dev
+        * --save-dev : 개발 환경에서만 사용할 용도라는 것을 정의
+                    이로 인해, build 할 때 제외된다.
 
+ - 시작 명령어를 nodemon으로 한다.
+    원래 node run start 이런 형식으로 했다.
 
+    package.json 파일의 script에
+    "backend": "nodemon index.js" 를 추가한 후
+    npm run backend로 시작한다. 
 
 
 
